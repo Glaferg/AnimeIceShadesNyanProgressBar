@@ -17,7 +17,13 @@ import java.awt.geom.*;
 
 public class NyanProgressBarUi extends BasicProgressBarUI {
     private static final float ONE_OVER_SEVEN = 1f / 7;
-    private static final Color VIOLET = new Color(90, 0, 157);
+    private static final Color NRED = new Color(74.9, 38, 41.6);
+    private static final Color NORANGE = new Color(81.6, 52.9, 43.9);
+    private static final Color NYELLOW = new Color(92.2, 79.6, 54.5);
+    private static final Color NGREEN = new Color(63.9, 74.5, 54.9);
+    private static final Color NlBLUE = new Color(53.3, 75.3, 81.6);
+    private static final Color NdBlue = new Color(36.9, 50.6, 67.5);
+    private static final Color NVIOLET = new Color(70.6, 55.7, 67.8);
 
 
     @SuppressWarnings({"MethodOverridesStaticMethodOfSuperclass", "UnusedDeclaration"})
@@ -74,7 +80,7 @@ public class NyanProgressBarUi extends BasicProgressBarUI {
 
         LinearGradientPaint baseRainbowPaint = new LinearGradientPaint(0, JBUI.scale(2), 0, h - JBUI.scale(6),
                 new float[]{ONE_OVER_SEVEN * 1, ONE_OVER_SEVEN * 2, ONE_OVER_SEVEN * 3, ONE_OVER_SEVEN * 4, ONE_OVER_SEVEN * 5, ONE_OVER_SEVEN * 6, ONE_OVER_SEVEN * 7},
-                new Color[]{Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, Color.cyan, Color.blue, VIOLET});
+                new Color[]{Color.NRED, Color.NORANGE, Color.NYELLOW, Color.NGREEN, Color.NlBLUE, Color.NdBLUE, NVIOLET});
 
         g.setPaint(baseRainbowPaint);
 
